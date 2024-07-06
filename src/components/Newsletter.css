@@ -1,0 +1,89 @@
+.newsletter-container {
+    width: 80%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: cover;
+    padding: 50px 50px; /* Adjust as needed for spacing */
+    left: 105px; 
+
+}
+
+.newsletter-content {
+    width: 1004px;
+    margin: auto;
+    position: relative;
+    color: white;
+}
+
+.newsletter-title {
+    font-size: 62px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    line-height: 74.4px;
+    letter-spacing: 0.19px;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+}
+
+.newsletter-description {
+    width: 400px;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    padding-left: 65%;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.08px;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+}
+
+.newsletter-subscribe {
+    width: 1004px;
+    height: 56px;
+    display: flex;
+    position: relative;
+}
+
+.newsletter-input {
+    width: 851px;
+    height: 56px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    color: #9A9AB0;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.08px;
+    word-wrap: break-word;
+}
+
+.subscribenews-button {
+  width: 124px;
+  height: 56px;
+  padding: 14px 24px;
+  left: calc(90%);
+  top: px;
+  position: absolute;
+  background: #F36326;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  line-height: 19.20px;
+  letter-spacing: 0.08px;
+  word-wrap: break-word;
+  transition: all 0.3s ease;
+}
+
+.subscribenews-button:hover {
+    background: white;
+    color: #F36326;
+}

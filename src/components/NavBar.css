@@ -1,0 +1,273 @@
+@media (max-width: 768px) {
+  .nav-categories {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-category {
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.navbar {
+  width: 100%;
+  height: 140px;
+  position: relative;
+}
+
+.navbar-background {
+  width: 100%;
+  height: 140px;
+  position: absolute;
+  background: linear-gradient(to right, #002F69 25%, #376EAE 100%);
+}
+
+.navbar-top {
+  width: 100%;
+  height: 72px;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.time-date {
+  position: absolute;
+  right: 105px; 
+  top: 18px;
+  color: rgba(253, 253, 253, 0.65);
+  font-size: 14px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+}
+
+
+.navbar-top-border {
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 72px;
+  position: absolute;
+  opacity: 0.23;
+  border-top: 1px solid white;
+}
+
+.navbar-bottom {
+  width: 100%;
+  height: 68px;
+  left: 0;
+  top: 72px;
+  position: absolute;
+}
+
+.navbar-bottom-border {
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 68px;
+  position: absolute;
+  opacity: 0.23;
+  border-top: 1px solid white;
+}
+
+.subscribe-button {
+  width: 124px;
+  height: 48px;
+  padding: 14px 24px;
+  left: calc(100% - 228px);
+  top: 10px;
+  position: absolute;
+  background: #F36326;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  line-height: 19.20px;
+  letter-spacing: 0.08px;
+  word-wrap: break-word;
+  transition: all 0.3s ease;
+}
+
+.subscribe-button:hover {
+  background: white;
+  color: #F36326;
+}
+
+
+.search-icon {
+  width: 36px;
+  height: 36px;
+  left: calc(100% - 284px);
+  top: 16px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.custom-search-box {
+  position: absolute;
+  left: 0;
+  top: 50px; /* Adjust as needed */
+  background: #F5F5F5;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.search-icon:hover .custom-search-box {
+  visibility: visible;
+  opacity: 1;
+}
+
+.search-icon-inner {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.search-icon-box {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  border: 1.5px solid #989898;
+}
+
+.search-text {
+  opacity: 0.5;
+  color: #656565;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 18px;
+  word-wrap: break-word;
+}
+
+.logo {
+  width: 137px;
+  height: 48px;
+  left: 91px;
+  top: 82px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.nav-categories {
+  left: 256px;
+  top: 98px;
+  position: absolute;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-category {
+  font-size: 15px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  line-height: 15px;
+  cursor: pointer;
+  word-wrap: break-word;
+  color: rgba(253, 253, 253, 0.65);
+}
+
+.nav-category.active {
+  color: #FDFDFD;
+}
+
+.nav-links {
+  width: 146px;
+  height: 20px;
+  left: 117px;
+  top: 26px;
+  position: absolute;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  line-height: 19.20px;
+  letter-spacing: 0.08px;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.more-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.down-icon {
+  width: 20px;
+  height: 24px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  left: 45px;
+  top: 2.5px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+}
+.dropdown-arrow {
+  width: 16px;
+  height: 16px;
+  left: 47px;
+  top: 4px;
+  position: absolute;
+}
+
+.dropdown-arrow::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 6.705px solid transparent;
+  border-right: 6.705px solid transparent;
+  border-top: 8.12px solid white;
+  position: absolute;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: #f0f0f0;
+}

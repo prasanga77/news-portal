@@ -1,0 +1,238 @@
+.footer-container {
+    width: 100%;
+    height: 100%;
+    left: 150px;
+    top: 100px;
+    position: relative;
+}
+
+.footer-content {
+    width: 1232px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+.footer-item {
+    position: absolute;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 0.08px;
+    word-wrap: break-word;
+}
+
+.language-switch {
+    width: 100px; 
+    height: 24px;
+    left: 1178px;
+    top: 301px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+
+.language-icon {
+    width: 20px;
+    height: 24px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left: 30px;
+    top: 5px;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+}
+
+.language-icon .icon-image {
+    width: 80%;
+    height: auto;
+}
+
+.language-select {
+    background: none;
+    border: 10px;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    padding: 2px 4px;
+    width: 50px;
+    color: #11142D;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    z-index: 1;
+}
+
+.language-text {
+    left: 10px;
+    top: 1px;
+    position: absolute;
+    color: #11142D;
+    font-weight: 600;
+}
+
+.copyright {
+    width: 272px;
+    left: 0;
+    top: 304px;
+    color: #666666;
+    font-weight: 700;
+}
+
+/* .footer-divider {
+    width: 1232px;
+    height: 0;
+    left: 0;
+    top: 277px;
+    border: 1px #F2F2F2 solid;
+} */
+
+.social-media {
+    width: 98px;
+    height: 167px;
+    left: 1134px;
+    top: 0;
+}
+
+.social-media-content {
+    width: 90px;
+    height: 124px;
+    left: 0;
+    top: 43px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.social-media-content a {
+    color: #515151;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.social-media-content div {
+    color: #515151;
+    font-weight: 400;
+    position: absolute;
+}
+
+.social-media-content div:nth-child(1) { top: 0; }
+.social-media-content div:nth-child(2) { top: 35px; }
+.social-media-content div:nth-child(3) { top: 70px; }
+.social-media-content div:nth-child(4) { top: 105px; }
+
+.social-media-title {
+    left: 0;
+    top: 0;
+    width: 135px;
+    position: absolute;
+    color: #11142D;
+    font-weight: 700;
+}
+
+.company-info {
+    width: 135px;
+    height: 202px;
+    left: 860px;
+    top: 0;
+}
+
+.company-info-content {
+    width: 135px;
+    height: 159px;
+    left: 0;
+    top: 43px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.company-info-content a {
+    color: #515151;
+    font-weight: 400;
+    text-decoration: none;
+}
+.company-info-content div {
+    color: #515151;
+    font-weight: 400;
+    position: absolute;
+}
+
+.company-info-content div:nth-child(1) { top: 0; }
+.company-info-content div:nth-child(2) { top: 35px; }
+.company-info-content div:nth-child(3) { top: 70px; }
+.company-info-content div:nth-child(4) { top: 105px; }
+.company-info-content div:nth-child(5) { top: 140px; }
+
+.company-info-title {
+    left: 0;
+    top: 0;
+    position: absolute;
+    color: #11142D;
+    font-weight: 700;
+}
+
+.categories {
+    width: 95px;
+    height: 246px;
+    left: 591px;
+    top: 0;
+}
+
+.categories-content {
+    width: 95px;
+    height: 203px;
+    left: 0;
+    top: 43px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.categories-content a {
+    color: #515151;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.categories-content div {
+    color: #515151;
+    font-weight: 400;
+    display: inline-flex;
+    align-self: stretch;
+}
+
+.categories-title {
+    left: 0;
+    top: 0;
+    position: absolute;
+    color: #11142D;
+    font-weight: 700;
+}
+
+.footer-description {
+    width: 249px;
+    left: 0;
+    top: 53px;
+    color: #515151;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.footer-logo {
+    width: 154px;
+    height: 73px;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
