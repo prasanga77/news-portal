@@ -1,15 +1,16 @@
 import React from 'react';
 import Navbar from './components/NavBar';
 import Footer from './components/Footer';
-import Newsletter from './components/Newsletter';
+import Home from './components/homepage';
+import NewsSettler from './components/Newsletter';
+
 
 function App() {
     return (
         <div className="App">
             <Navbar />
-            <div style={{ marginTop: '50px' }}> {/* Maintain some gap */}
-                <Newsletter />
-            </div>
+            <Home />
+            <NewsSettler/>
             <Footer />
         </div>
     );

@@ -1,0 +1,110 @@
+/* LatestNews.css */
+.latest-news-container {
+    font-family: 'Mulish', sans-serif;
+    position: relative;
+    padding: 20px 0;
+    max-width: 1232px;
+    margin: 0 auto;
+  }
+  
+  .latest-news-heading {
+    color: #11142D;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 37.2px;
+    letter-spacing: 0.15px;
+    margin-bottom: 20px;
+  }
+  
+  .latest-news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .latest-news-item {
+    width: 296px;
+    height: 534px;
+    background: white;
+    position: relative;
+  }
+  
+  .latest-news-image {
+    width: 296px;
+    height: 312px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .latest-news-category {
+    position: absolute;
+    top: 272px;
+    left: 0;
+    padding: 14px 16px;
+    background: white;
+    color: #9A9AB0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13.2px;
+    letter-spacing: 0.1px;
+  }
+  
+  .latest-news-title {
+    padding: 16px;
+    color: #333333;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    letter-spacing: 0.12px;
+  }
+  
+  .latest-news-meta {
+    position: absolute;
+    bottom: 32px;
+    left: 16px;
+    color: #9A9AB0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13.2px;
+    letter-spacing: 0.1px;
+  }
+  
+  .latest-news-author {
+    margin-right: 16px;
+  }
+  
+  .latest-news-view-all {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 18px 24px;
+    background: #F36326;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 0.08px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .latest-news-view-all:hover {
+    background-color: white;
+    color: #F36326;
+    border: 2px solid #F36326;
+  }
+  
+  @media (max-width: 1260px) {
+    .latest-news-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .latest-news-grid {
+      grid-template-columns: 1fr;
+    }
+  }
