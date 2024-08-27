@@ -1,8 +1,8 @@
 .recommended-for-you {
     font-family: 'Mulish', sans-serif;
-    max-width: calc(100% - 210px);
+    max-width: calc(100% - 250px);
     margin: 0 auto;
-    padding: 20px 50px;
+    padding: 20px 0px;
     box-sizing: border-box;
   }
   

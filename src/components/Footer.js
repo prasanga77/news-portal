@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Footer.css';
 import logo from '../Images/logocolour.png';
-import languageIcon from '../Images/dropdownb.svg'; // Add the path to your icon image
+import languageIcon from '../Images/dropdownb.svg'; 
 
 const Footer = () => {
     const [language, setLanguage] = useState('EN');

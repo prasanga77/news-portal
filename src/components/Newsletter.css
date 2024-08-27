@@ -1,11 +1,12 @@
 .newsletter-container {
-    width: 80%;
+    width: 76%;
     height: 100%;
     position: relative;
     background-size: cover;
     background-position: cover;
-    padding: 50px 50px; /* Adjust as needed for spacing */
-    left: 105px; 
+    padding: 50px 50px; 
+    left: 125px; 
+    margin-top: 10px;
 
 }
 
@@ -50,16 +51,19 @@
     height: 56px;
     background: white;
     border-radius: 8px;
-    display: flex;
-    align-items: center;
     padding-left: 24px;
-    color: #9A9AB0;
+    color: #515151;
     font-size: 16px;
     font-family: 'Mulish', sans-serif;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.08px;
-    word-wrap: break-word;
+    border: none; 
+    outline: none; 
+}
+
+.newsletter-input::placeholder {
+    color: #7b7b91; 
 }
 
 .subscribenews-button {

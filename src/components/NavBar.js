@@ -3,13 +3,15 @@ import logo from '../Images/logo.png';
 import './NavBar.css';
 import search_icon from '../Images/search.svg';
 import icon from '../Images/dropdown.svg';
+import menu_icon from '../Images/menu.svg'; 
 
-
-const NavBar = () => {
+const NavBar = ({ onSubscribe }) => {
   const [searchBoxVisible, setSearchBoxVisible] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
-  const [activeCategory, setActiveCategory] = useState(null); // Initially, no category is active
+  const [activeCategory, setActiveCategory] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
   const searchRef = useRef(null);
   const dropdownRef = useRef(null);
 
@@ -35,20 +37,21 @@ const NavBar = () => {
     }
   };
 
-  // const handleSearchClick = () => {
-  //   setSearchBoxVisible(!searchBoxVisible);
-  // };
-
   const handleDropdownClick = () => {
     setDropdownVisible(!dropdownVisible);
   };
 
-  const handleSearchIconHover = (isHovering) => {
-    if (isHovering) {
-      setSearchBoxVisible(true);
-    } else {
-      setSearchBoxVisible(false);
-    }
+  const handleSearchIconClick = () => {
+    setSearchBoxVisible(!searchBoxVisible);
+  };
+
+  const handleMobileMenuToggle = () => {
+    setMobileMenuVisible(!mobileMenuVisible);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    console.log('Searching for:', searchQuery);
   };
 
   const formatDate = (date) => {
@@ -72,26 +75,23 @@ const NavBar = () => {
       </div>
       <div className="navbar-bottom">
         <div className="navbar-bottom-border"></div>
-        <button className="subscribe-button">Subscribe</button>
-        <div
-          className="search-icon"
-          onMouseEnter={() => handleSearchIconHover(true)}
-          onMouseLeave={() => handleSearchIconHover(false)}
-        >
+        <button className="subscribe-button" onClick={onSubscribe}>Subscribe</button>
+        <div className="search-icon" onClick={handleSearchIconClick}>
           <img src={search_icon} alt="Search" />
-          {searchBoxVisible && (
-            <div className="custom-search-box" ref={searchRef}>
-              <div className="search-icon-inner">
-                <div className="search-icon-box">
-                  <div className="search-icon-border"></div>
-                </div>
-                <div className="search-text">Search</div>
-              </div>
-            </div>
-          )}
         </div>
+        {searchBoxVisible && (
+          <form className="search-box" ref={searchRef} onSubmit={handleSearchSubmit}>
+            <input
+              type="text"
+              placeholder="Search..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            <button type="submit">Search</button>
+          </form>
+        )}
       </div>
-      <img className="logo" src={logo} alt="Logo" onClick={() => window.location.href = '/'} />
+      <img className="logo" src={logo} alt="Logo" />
       <div className="nav-categories">
         {['National', 'International', 'Economy', 'Science', 'Health', 'Climate', 'Lifestyle', 'Sports'].map((item, index) => (
           <div 
@@ -108,7 +108,7 @@ const NavBar = () => {
         <div className="more-dropdown" onClick={handleDropdownClick} ref={dropdownRef}>
           <div className="nav-link">More</div>
           <div className="down-icon">
-             < img src={icon} alt="dropdown" /> 
+            <img src={icon} alt="dropdown" />
           </div>
           {dropdownVisible && (
             <div className="dropdown-menu">
@@ -119,6 +119,24 @@ const NavBar = () => {
           )}
         </div>
       </div>
+      <div className="mobile-menu-icon" onClick={handleMobileMenuToggle}>
+        <img src={menu_icon} alt="Menu" />
+      </div>
+      {mobileMenuVisible && (
+        <div className="mobile-menu">
+          <div className="mobile-nav-categories">
+            {['National', 'International', 'Economy', 'Science', 'Health', 'Climate', 'Lifestyle', 'Sports'].map((item, index) => (
+              <div key={index} className="mobile-nav-category">{item}</div>
+            ))}
+          </div>
+          <div className="mobile-nav-links">
+            <div className="mobile-nav-link">News</div>
+            <div className="mobile-nav-link">Video</div>
+            <div className="mobile-nav-link">Author</div>
+            <div className="mobile-nav-link">About Us</div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
