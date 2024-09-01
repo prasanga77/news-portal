@@ -75,29 +75,26 @@
   }
   
   .latest-news-view-all {
-    width: 124px;
-  height: 48px;
-  padding: 14px 24px;
-  left: calc(100% - 228px);
-  top: 10px;
-  position: absolute;
-  background: #F36326;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  color: white;
-  font-size: 16px;
-  font-family: 'Mulish', sans-serif;
-  font-weight: 700;
-  line-height: 19.20px;
-  letter-spacing: 0.08px;
-  word-wrap: break-word;
-  transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 18px 24px;
+    background: #F36326;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 0.08px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
   }
   
   .latest-news-view-all:hover {
-    background: white;
-  color: #F36326;
+    background-color: white;
+    color: #F36326;
+    border: 2px solid #F36326;
   }
   
   @media (max-width: 1260px) {
