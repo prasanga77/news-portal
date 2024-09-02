@@ -7,7 +7,7 @@ const CommentSection = () => {
       <div className="comment-input">
         <img src="https://via.placeholder.com/48x48" alt="User avatar" className="avatar" />
         <textarea placeholder="Write your comment in here" className="comment-textarea" />
-        <button className="post-button">Post Comment</button>
+        <button className="commentpost-button">Post Comment</button>
       </div>
       
       {[

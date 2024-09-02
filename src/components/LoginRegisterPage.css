@@ -13,7 +13,7 @@ body {
   height: 100vh;
 }
 
-.logo-section {
+.form-logo-section {
   width: 50%;
   background: linear-gradient(to right, #002F69 25%, #376EAE 100%);
   display: flex;
@@ -21,7 +21,7 @@ body {
   justify-content: center;
 }
 
-.logo {
+.form-logo {
   height: auto;
   width: 200px;
     position: center;

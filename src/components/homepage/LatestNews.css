@@ -78,7 +78,7 @@
     width: 124px;
   height: 48px;
   padding: 14px 24px;
-  left: calc(100% - 228px);
+  left: calc(100% - 120px);
   top: 10px;
   position: absolute;
   background: #F36326;
@@ -98,6 +98,8 @@
   .latest-news-view-all:hover {
     background: white;
   color: #F36326;
+  border: 2px solid #F36326;
+
   }
   
   @media (max-width: 1260px) {

@@ -41,8 +41,8 @@ const LoginRegisterPage = () => {
 
   return (
     <div className="login-register-container">
-      <div className="logo-section">
-      <img className="logo" src={logo} alt="Logo" />
+      <div className="form-logo-section">
+      <img className="form-logo" src={logo} alt="Logo" />
       </div>
       <div className="form-section">
         <div className="form-container">

@@ -1,6 +1,6 @@
 // LatestNews.js
 import React from 'react';
-import './LatestNewsar.css';
+import './LatestNews.css';
 
 const NewsItem = ({ category, title, author, daysAgo, imageUrl }) => (
   <div className="latest-news-item">
@@ -43,13 +43,12 @@ const LatestNews = () => {
       author: 'Floyd Miles',
       daysAgo: 3,
       imageUrl: 'https://via.placeholder.com/296x312'
-    },
-   
+    }
   ];
 
   return (
     <div className="latest-news-container">
-      <h2 className="latest-news-heading">Related News</h2>
+      <h2 className="latest-news-heading">Similar News</h2>
       <div className="latest-news-grid">
         {newsItems.map((item, index) => (
           <NewsItem key={index} {...item} />

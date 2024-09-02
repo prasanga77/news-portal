@@ -13,64 +13,32 @@ const NewsCard = ({ category, title, author, daysAgo, imageUrl }) => (
   </div>
 );
 
-const RecommendedForYou = () => {
+const RecommendedForYou = ({ category }) => {
   const [activePage, setActivePage] = useState(1);
   const [isAnimating, setIsAnimating] = useState(false);
   const paginationRef = useRef(null);
 
   const newsData = [
     {
-      category: "Innovation",
       title: "Figma ipsum component variant main layer. Stroke inspect export effect flatten slice device.",
       author: "Floyd Miles",
       daysAgo: 3,
       imageUrl: "https://via.placeholder.com/608x376"
     },
     {
-      category: "Science",
       title: "Figma ipsum component variant main layer. Effect strikethrough create device vector flatten.",
       author: "Floyd Miles",
       daysAgo: 3,
       imageUrl: "https://via.placeholder.com/608x376"
     },
     {
-      category: "Industry",
       title: "Figma ipsum component variant main layer. Slice font scrolling pixel invite vertical bullet.",
       author: "Floyd Miles",
       daysAgo: 3,
       imageUrl: "https://via.placeholder.com/608x376"
     },
     {
-      category: "Technology",
       title: "Figma ipsum component variant main layer. Prototype design system auto layout.",
-      author: "Floyd Miles",
-      daysAgo: 3,
-      imageUrl: "https://via.placeholder.com/608x376"
-    },
-    {
-      category: "Business",
-      title: "Figma ipsum component variant main layer. Boolean operation vector path pixel perfect.",
-      author: "Floyd Miles",
-      daysAgo: 3,
-      imageUrl: "https://via.placeholder.com/608x376"
-    },
-    {
-      category: "Industry",
-      title: "Figma ipsum component variant main layer. Slice font scrolling pixel invite vertical bullet.",
-      author: "Floyd Miles",
-      daysAgo: 3,
-      imageUrl: "https://via.placeholder.com/608x376"
-    },
-    {
-      category: "Technology",
-      title: "Figma ipsum component variant main layer. Prototype design system auto layout.",
-      author: "Floyd Miles",
-      daysAgo: 3,
-      imageUrl: "https://via.placeholder.com/608x376"
-    },
-    {
-      category: "Business",
-      title: "Figma ipsum component variant main layer. Boolean operation vector path pixel perfect.",
       author: "Floyd Miles",
       daysAgo: 3,
       imageUrl: "https://via.placeholder.com/608x376"
@@ -102,7 +70,7 @@ const RecommendedForYou = () => {
     const cards = [];
     for (let i = 0; i < 4; i++) { // Display 4 cards
       const index = (activePage - 1 + i) % newsData.length;
-      cards.push({ ...newsData[index], position: i });
+      cards.push({ ...newsData[index], category, position: i });
     }
     return cards;
   };
@@ -117,7 +85,7 @@ const RecommendedForYou = () => {
   return (
     <div className="recommended-for-you">
       <div className="header">
-        <h1 className="recommended-title">Recommended For You</h1>
+        <h1 className="recommended-title">Recommended {category} News</h1>
         <div className="pagination" ref={paginationRef}>
           <button 
             className="arrow-button left" 
