@@ -66,7 +66,8 @@
   
   .side-article .article-content {
     width: 264px;
-    height: 153px;
+    height: 185px;
+    color: white;
     margin: 16px;
     position: relative;
   }
@@ -88,7 +89,7 @@
   
   .popular-articles {
     width: 504px;
-    height: 693px;
+    height: 700px;
     position: absolute;
     left: 728px;
     top: 0;

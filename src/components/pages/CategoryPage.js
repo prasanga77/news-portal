@@ -1,4 +1,7 @@
 import React from 'react';
+import Top from "../homepage/fortopcategory";
+import Bottom from "../homepage/forcategory";
+
 
 const CategoryPage = ({ category }) => {
   return (
@@ -8,7 +11,9 @@ const CategoryPage = ({ category }) => {
       <p style={{ paddingLeft: '120px' }}>
         Welcome to the {category} section. Here you will find the latest news and updates related to {category.toLowerCase()}.
       </p>
- 
+     
+      <Top category={category} />
+      <Bottom category={category} />
     </div>
   );
 };

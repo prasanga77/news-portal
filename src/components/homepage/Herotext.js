@@ -1,4 +1,3 @@
-// NewsPage.js
 import React from 'react';
 import './Herotext.css';
 
