@@ -4,6 +4,7 @@ import LoginRegisterPage from './components/LoginRegisterPage';
 import Navbar from './components/NavBar';
 import Footer from './components/Footer';
 import Home from './components/homepage';
+import Newsboard from './components/dashboard/Dashboard';
 import NewsSettler from './components/Newsletter';
 import Article from './components/article';
 
@@ -16,7 +17,7 @@ function AppContent() {
     };
 
     // Define pages where you don't want to show Navbar or Footer (e.g., /login)
-    const hideLayout = location.pathname === '/login';
+    const hideLayout = ['/login', '/newsboard'].includes(location.pathname);
 
     return (
         <div className="App">
@@ -27,6 +28,7 @@ function AppContent() {
                 <Route path="/" element={<Home />} />
                 <Route path="/article" element={<Article />} />
                 <Route path="/login" element={<LoginRegisterPage />} />
+                <Route path="/newsboard" element={<Newsboard />} />
                 {/* Add more routes as needed */}
             </Routes>
 
