@@ -5,7 +5,6 @@ const NewsPage = () => {
   return (
     <div className="news-page">
       <MainArticle />
-      <SideArticles />
       <PopularArticles />
     </div>
   );
@@ -23,22 +22,6 @@ const MainArticle = () => {
   );
 };
 
-const SideArticles = () => {
-  return (
-    <div className="side-articles">
-      <div className="side-article main">
-        <div className="article-content">
-          <p>Lorem ipsum dolor sit amet consectetur. Nulla justo nec amet eget nisl lorem risus at nunc.</p>
-          <img src="/api/placeholder/120/80" alt="Article thumbnail" />
-        </div>
-      </div>
-      <div className="side-article secondary">
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <img src="/api/placeholder/120/80" alt="Article thumbnail" />
-      </div>
-    </div>
-  );
-};
 
 const PopularArticles = () => {
   const articles = [
