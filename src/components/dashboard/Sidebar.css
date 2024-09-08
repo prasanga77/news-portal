@@ -1,5 +1,6 @@
 .sidebar {
   background: linear-gradient(180deg, #002f69 0%, #3b6ead 100%);
+  position: relative;
   width: 250px;
   height: 100vh;
   padding: 20px;

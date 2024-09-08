@@ -17,17 +17,17 @@ const Sidebar = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/create-news" className={({ isActive }) => (isActive ? 'active' : '')}>
+            <NavLink to="/newsboard/create-news" className={({ isActive }) => (isActive ? 'active' : '')}>
               <i className="icon-create-news"></i> Create News
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/insights" className={({ isActive }) => (isActive ? 'active' : '')}>
+            <NavLink to="/newsboard/insights" className={({ isActive }) => (isActive ? 'active' : '')}>
               <i className="icon-insights"></i> Insights
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/listofarticles" className={({ isActive }) => (isActive ? 'active' : '')}>
+            <NavLink to="/newsboard/listofarticles" className={({ isActive }) => (isActive ? 'active' : '')}>
               <i className="icon-articles"></i> Articles
             </NavLink>
           </li>
@@ -36,7 +36,7 @@ const Sidebar = () => {
       <div className="sidebar-footer">
         <ul>
           <li className="nav-item">
-            <NavLink to="/settings" className={({ isActive }) => (isActive ? 'active' : '')}>
+            <NavLink to="/newsboard/settings" className={({ isActive }) => (isActive ? 'active' : '')}>
               <i className="icon-settings"></i> Settings
             </NavLink>
           </li>

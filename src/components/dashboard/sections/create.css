@@ -1,0 +1,128 @@
+.articles-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .create-article-btn {
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .article-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .article-category,
+  .article-title,
+  .article-time {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 10px;
+  }
+  
+  .article-category {
+    color: #04336E;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .article-title {
+    color: #38393C;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .article-time {
+    color: #ABAEB7;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .article-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  
+  .edit-btn {
+    background-color: #357600;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #C00D0D;
+    color: white;
+  }
+  
+  .editor-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .editor-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+  }
+  
+  .editor-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .save-btn,
+  .cancel-btn {
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #C00D0D;
+  }
+  

@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Sidebar from './Sidebar'; 
 import Header from './Header'; 
 import List from './sections/list';
@@ -9,6 +9,25 @@ import Settings from './sections/settings';
 import './Dashboard.css'; 
 
 function Dashboard() {
+  const location = useLocation();
+
+  // Function to render the appropriate component based on the current route
+  const renderContent = () => {
+    const path = location.pathname;
+    
+    if (path.includes('/newsboard/create-news')) {
+      return <Newnews />;
+    } else if (path.includes('/newsboard/insights')) {
+      return <Insights />;
+    } else if (path.includes('/newsboard/listofarticles')) {
+      return <List />;
+    } else if (path.includes('/newsboard/settings')) {
+      return <Settings />;
+    } else {
+      // Default component or 404 page
+      return <div>Welcome to the Dashboard</div>;
+    }
+  };
 
   return (
     <div className="dashboard-container">
@@ -16,17 +35,12 @@ function Dashboard() {
       <div className="dashboard-content">
         <Header />
         <div className="content-area">
-          <Routes>
-            <Route path="/create-news" element={<Newnews />} />
-            <Route path="/insights" element={<Insights />} />
-            <Route path="/listofarticles" element={<List />} />
-            <Route path="/settings" element={<Settings />} />
-            {/* Add more routes as needed */}
-          </Routes>
+          <Newnews />
+          {renderContent()}
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Dashboard;

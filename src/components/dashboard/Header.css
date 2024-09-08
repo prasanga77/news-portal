@@ -1,43 +1,85 @@
-.header {
-  display: flex;
+.newsboard-container {
+  width: 100%;
+  height: 15%;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  padding-left: 0px;
+  padding-right: 20px;
+  background: white;
+  display: inline-flex;
+  justify-content: flex-end;
   align-items: center;
-  background-color: #fff;
-  padding: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 50px;
 }
 
-.header-title {
+.newsboard-text-container {
+  width: 950px;
+  height: 76px;
+  position: relative;
+}
+
+.newsboard-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #04336E;
   font-size: 40px;
-  color: #002f69;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 750;
+  word-wrap: break-word;
+}
+
+.newsboard-subtitle {
+  position: absolute;
+  left: 0;
+  top: 52px;
+  color: #ABAEB7;
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 500;
+  word-wrap: break-word;
 }
 
 .user-info {
-  display: flex;
-  align-items: right;
-}
-
-.user-info span {
-  margin-right: 20px;
-  font-size: 16px;
-  color: #555;
-}
-
-.user-details {
-  display: flex;
-  align-items: center;
+  width: 225px;
+  height: 64px;
+  position: relative;
 }
 
 .user-avatar {
-  border-radius: 50%;
-  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.user-details {
+  width: 138px;
+  height: 54px;
+  position: absolute;
+  left: 87px;
+  top: 2px;
 }
 
 .user-name {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #38393C;
   font-size: 16px;
-  font-weight: bold;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 500;
+  word-wrap: break-word;
 }
 
 .user-email {
-  font-size: 14px;
-  color: #888;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  color: #ABAEB7;
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 500;
+  word-wrap: break-word;
 }
